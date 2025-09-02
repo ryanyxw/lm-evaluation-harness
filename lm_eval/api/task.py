@@ -994,7 +994,6 @@ class ConfigurableTask(Task):
                 **(self.config.metadata or {}), **(self.config.dataset_kwargs or {})
             )
         else:
-            print("YAY?")
             self.dataset = datasets.load_dataset(
                 path=self.DATASET_PATH,
                 name=self.DATASET_NAME,
